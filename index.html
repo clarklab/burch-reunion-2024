@@ -75,12 +75,24 @@
       width:10px;
       height:10px;
       border-radius:100px;
-      background:#FCFAF5;
+      background:#FB5B12;
       display:block;
       right:15px;
       content:" ";
       top:50%;
       transform:translate(0, -50%)
+    }
+
+    .nav .dot-after:last-child{
+      padding-right:0;
+    }
+
+    .nav .dot-after:last-child:after{
+      display:none;
+    }
+
+    .bg-orange .dot-after:after{
+      background:#FCFAF5;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -113,6 +125,20 @@
   <section class="hero px-10 md:px-20 mb-20">
     <img src="hero-title-light.svg" alt="" class="w-full block dark:hidden">
     <img src="hero-title-dark.svg" alt="" class="w-full hidden dark:block">
+
+<section class="wayfaring text-3xl md:text-4xl my-16 text-center">
+  <h2 class="henrietta font-semibold inline-block mb-6">2024  reunion</h2>
+  <ul class="nav flex flex-wrap text-2xl place-content-center">
+      <li class="dot-after"><a href="#lodging">Lodging</a></li>
+      <li class="dot-after"><a href="#schedule">Schedule</a></li>
+      <li class="dot-after"><a href="#meals">Meals</a></li>
+      <li class="dot-after"><a href="#guests">Guests</a></li>
+      <li class="dot-after"><a href="#shirts">Shirts</a></li>
+      <li class="dot-after"><a href="#payments">Payments</a></li>
+      <li class="dot-after"><a href="#faqs">FAQs</a></li>
+    </ul>
+</section>
+    
 
     <img src="hero-art-light.svg" alt="" class="w-full block dark:hidden">
     <img src="hero-art-dark.svg" alt="" class="w-full hidden dark:block">
