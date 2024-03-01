@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Burch Reunion 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: '#FB5B12',
+            cream: '#FCFAF5',
+            turf: '#0F490A',
+            tea: '#E4FAD3'
+
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+  <style type="text/tailwindcss">
+
+    @font-face {
+      font-family: 'Henrietta';
+      src: url('VCHenrietta-Medium.woff2') format('woff2'),
+           url('VCHenrietta-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henrietta';
+      src: url('VCHenrietta-Semibold.woff2') format('woff2'),
+           url('VCHenrietta-Semibold.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "YOPQ" 300;
+    }
+
+    .henrietta{
+      font-family: 'Henrietta', sans-serif;
+    }
+
+    .track {
+      will-change: transform;
+      animation: marquee 15s linear infinite; /* Adjust duration as needed */
+    }
+    .dot-after{
+      display:inline-block;
+      padding-right:50px;
+      position:relative;
+    }
+
+    .dot-after:after{
+      position:absolute;
+      width:10px;
+      height:10px;
+      border-radius:100px;
+      background:#FCFAF5;
+      display:block;
+      right:15px;
+      content:" ";
+      top:50%;
+      transform:translate(0, -50%)
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .dot-after:after{
+        background:#0F490A;
+      }
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0%); }
+      to { transform: translateX(-33.333%); } /* Adjusted for 3 spans */
+    }
+
+  </style>
+</head>
+<body class="text-orange bg-cream dark:text-tea dark:bg-turf text-xl pb-48">
+
+  <div class="marquee bg-orange dark:bg-tea text-white dark:text-turf text-2xl overflow-hidden whitespace-nowrap py-4">
+    <div class="track inline-block uppercase">
+    <span class="text dot-after"><strong class="font-bold inline-block pr-2">up to 5 days of nonstop visitin’!!!</strong>  Book from <strong class="font-bold">June 19–23</strong> to catch the early crowd </span>
+    <span class="text dot-after"><strong class="font-bold inline-block pr-2">up to 5 days of nonstop visitin’!!!</strong>  Book from <strong class="font-bold">June 19–23</strong> to catch the early crowd </span>
+    <span class="text dot-after"><strong class="font-bold inline-block pr-2">up to 5 days of nonstop visitin’!!!</strong>  Book from <strong class="font-bold">June 19–23</strong> to catch the early crowd </span>
+  </div>
+  </div>
+
+  <div class="book uppercase px-8 text-center text-2xl my-10">
+    <a href="#book">Book now for <strong class="font-bold">June 2024</strong></a>
+  </div>
+
+  <section class="hero px-10 md:px-20 mb-20">
+    <img src="hero-title-light.svg" alt="" class="w-full block dark:hidden">
+    <img src="hero-title-dark.svg" alt="" class="w-full hidden dark:block">
+
+    <img src="hero-art-light.svg" alt="" class="w-full block dark:hidden">
+    <img src="hero-art-dark.svg" alt="" class="w-full hidden dark:block">
+  </section>
+
+  
+  <div id="welcome" class="section max-w-5xl mx-auto px-5 mb-16">
+   <h2 class="my-8 mt-4 text-3xl md:text-4xl border border-4 border-orange dark:border-tea border-x-0 py-4 text-center henrietta font-semibold">Welcome</h2>
+   <p class="mb-6">The 2024 Burch Family Reunion will take place July 19-23 at the <a href="https://innsbrookruidoso.com/" target="_blank" class="underline decoration-3 font-bold ">Innsbrook Village Country Club & Resort</a> in Ruidoso, New Mexico! We'd love for you to join us, and hope this page has all the information needed to make your trip an easy one.</p>
+   <p class="">This year, we've added a few extra days for those that can make it. <strong class="font-bold">The main festivities are Friday, Saturday, and Sunday, July 21-23, 2024.</strong> Some of us will also be there early, starting Wednesday, July 19. Whatever works, join us when you can!</p>
+ </div>
+
+</body>
+</html>
