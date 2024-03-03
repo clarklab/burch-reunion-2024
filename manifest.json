@@ -1,0 +1,16 @@
+{
+  "short_name": "Burch Reunion",
+  "name": "Burch Family Reunion 2024",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#FB5B12",
+  "background_color": "#FCFAF5",
+  "prefer_related_applications": false
+}
