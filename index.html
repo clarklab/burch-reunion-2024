@@ -103,6 +103,21 @@
     .nav .dot-after:last-child:after{
       display:none;
     }
+    
+    .nav .dot-after:nth-child(3):after{
+        display:none;
+      }
+
+    @media screen and (min-width:556px){
+
+      .nav .dot-after:nth-child(3):after{
+        display:block;
+      }
+
+      .nav .dot-after:nth-child(4):after{
+        display:none;
+      }
+    }
 
     .bg-orange .dot-after:after{
       background:#FCFAF5;
@@ -161,7 +176,7 @@
           <li class="dot-after"><a href="#lodging">Lodging</a></li>
           <li class="dot-after"><a href="#schedule">Schedule</a></li>
           <li class="dot-after"><a href="#meals">Meals</a></li>
-          <li class="dot-after opacity-40"><a href="#guests">Guests</a></li>
+          <li class="dot-after"><a href="#guestlist">Guests</a></li>
           <li class="dot-after opacity-40"><a href="#shirts">Shirts</a></li>
           <li class="dot-after opacity-40"><a href="#payments">Payments</a></li>
           <li class="dot-after"><a href="#FAQs">FAQs</a></li>
@@ -280,6 +295,75 @@
     </div>
 
    </div>
+
+
+<div id="guestlist" class="section text-center max-w-5xl mx-auto px-5 mb-16 pb-16">
+   <h2 class="my-8 mt-4 text-3xl md:text-4xl border border-4 border-orange dark:border-tea border-x-0 py-4 text-center henrietta font-semibold">Guest List</h2>
+   <div class="block md:grid md:gap-8 md:grid-cols-3 text-left gap-2">
+
+     <div class="unit mb-6 md:mb-0">
+       <h4 class="font-black leading-tight">Townhome 37</h4>
+
+       <p class="leading-tight">
+        Joe Strickland<br>
+        Jana Strickland<br>
+        Joelle Chavez<br>
+        Roland Chavez<br>
+        Adam (AJ) Chavez<br>
+        Jace Strickland
+      </p>
+     </div>
+
+     <div class="unit mb-6 md:mb-0">
+       <h4 class="font-black leading-tight">Townhome 40</h4>
+
+       <p class="leading-tight">
+        Kris Strickland<br>
+        Debbie Strickland<br>
+        Michael Strickland<br>
+        Mi-Sa Strickland<br>
+        Clark Wimberly<br>
+        Angie Wimberly
+      </p>
+     </div>
+
+     <div class="unit mb-6 md:mb-0">
+       <h4 class="font-black leading-tight">Condo 18</h4>
+
+       <p class="leading-tight">
+        Steve (-a-reno) Strickland<br>
+        Priscilla Strickland<br>
+        Luke Strickland<br>
+        Amelia Strickland<br>
+        Dave Strickland<br>
+        Lauren Strickland<br>
+        Oli Strickland<br>
+      </p>
+     </div>
+
+    <div class="unit mb-6 md:mb-0">
+       <h4 class="font-black leading-tight">Townhome 72</h4>
+
+       <p class="leading-tight">
+        Jim Brandon<br>
+        Marsha Brandon<br>
+        Chris Brandon<br>
+        Belle Brandon<br>
+        Lily Brandon<br>
+        Asher Brandon<br>
+        Gray Brandon<br>
+        Caleb Brandon<br>
+        Jennifer Brandon<br>
+        Malaura Brandon<br>
+        Aria Brandon<br>
+        Journey Brandon<br>
+      </p>
+     </div>
+
+  </div>
+
+  
+ </div>
 
  <div  id="lodging" class="section max-w-5xl mx-auto px-5 mb-16">
    <h2 class="my-8 mt-4 text-3xl md:text-4xl border border-4 border-orange dark:border-tea border-x-0 py-4 text-center henrietta font-semibold">Lodging</h2>
